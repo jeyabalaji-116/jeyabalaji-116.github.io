@@ -5,40 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeya Balaji | Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --deep-twilight: #03045e;
+      --bright-teal-blue: #0077b6;
+      --turquoise-surf: #00b4d8;
+      --frosted-blue: #90e0ef;
+      --light-cyan: #caf0f8;
+    }
+
+    * {
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light-cyan);
+      color: var(--deep-twilight);
+      line-height: 1.6;
+    }
+
     header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
+      background: linear-gradient(135deg, var(--deep-twilight), var(--bright-teal-blue));
+      color: white;
       text-align: center;
+      padding: 40px 20px;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background: var(--turquoise-surf);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
+      background: white;
+      margin: 20px auto;
       padding: 20px;
-      margin: 10px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
+
     h2 {
-      color: #444;
+      color: var(--bright-teal-blue);
+      margin-bottom: 10px;
     }
+
     ul {
-      list-style-type: square;
+      padding-left: 20px;
     }
+
+    .skills span {
+      display: inline-block;
+      background: var(--frosted-blue);
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
     footer {
       text-align: center;
-      padding: 10px;
-      background: #222;
-      color: #fff;
+      padding: 15px;
+      background: var(--deep-twilight);
+      color: white;
+      margin-top: 20px;
     }
+
     a {
-      color: #0077b5;
-      text-decoration: none;
+      color: var(--bright-teal-blue);
     }
   </style>
 </head>
@@ -48,26 +107,49 @@
   <h1>Jeya Balaji M</h1>
   <p>Computer Science Engineering Student</p>
   <p>Email: jeyabalaji.m6575@gmail.com</p>
-  <p><a href="https://www.linkedin.com/in/jeya-balaji" target="_blank">LinkedIn Profile</a></p>
+  <p><a href="#">LinkedIn Profile</a></p>
 </header>
 
-<section>
-  <h2>Career Objective</h2>
-  <p>Motivated Computer Science and Engineering student seeking opportunities to apply programming and creative skills in real-world projects and gain industry experience.</p>
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate Computer Science student who enjoys building creative and practical solutions using programming and design tools. I love exploring new technologies and continuously improving my skills.</p>
 </section>
 
-<section>
+<section id="education">
   <h2>Education</h2>
   <p><strong>B.E. Computer Science and Engineering</strong></p>
   <p>Dr. Sivanthi Aditanar College of Engineering, Tiruchendur</p>
   <p>Expected Graduation: 2028</p>
 </section>
 
-<section>
+<section id="skills">
   <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>C</span>
+    <span>C++</span>
+    <span>Java</span>
+    <span>Adobe Premiere Pro</span>
+    <span>CapCut</span>
+    <span>Photoshop</span>
+    <span>Canva</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
   <ul>
-    <li>Python, C, C++, Java</li>
-    <li>Adobe Premiere Pro, CapCut, Photoshop, Canva</li>
+    <li>Portfolio Website (this site)</li>
+    <li>Basic Python Applications</li>
+    <li>Creative Video Editing Projects</li>
   </ul>
 </section>
 
@@ -82,6 +164,12 @@
 <section>
   <h2>Experience</h2>
   <p>Part-Time Worker – AutoCAD (assisted with design and drafting tasks)</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: jeyabalaji.m6575@gmail.com</p>
+  <p>Open to internships and collaboration opportunities.</p>
 </section>
 
 <footer>
